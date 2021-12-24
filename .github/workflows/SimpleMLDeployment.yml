@@ -38,8 +38,3 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::593929748928:user/hsuchihchao
           aws-region: us-east-1
-
-      - name: Setting up DVC 
-        uses: iterative/setup-dvc@v1
-        run: |
-          dvc pull
