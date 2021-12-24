@@ -1,12 +1,10 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: Simple ML CI/CD
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 jobs:
@@ -16,7 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.10
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: "3.8"
@@ -34,3 +32,14 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+
+     - name: Configure AWS Credentials
+       uses: aws-actions/configure-aws-credentials@v1
+       with:
+        role-to-assume: arn:aws:iam::593929748928:user/hsuchihchao
+        aws-region: us-east-1
+
+     - name: Setting up DVC 
+       uses: iterative/setup-dvc@v1
+       run: |
+        dvc pull
