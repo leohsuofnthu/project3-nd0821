@@ -3,13 +3,15 @@
 from sklearn.model_selection import train_test_split
 
 # Add the necessary imports for the starter code.
-import pandas as pd
+import os
 import joblib
+import pandas as pd
 from ml.data import process_data
 from ml.model import train_model
 
 # Add code to load in the data.
-data = pd.read_csv("../data/cleaned_census.csv")
+dirname = os.path.dirname(__file__)
+data = pd.read_csv(os.path.join(dirname, "../data/cleaned_census.csv"))
 
 # Optional enhancement, use K-fold cross validation instead of a train-test split.
 train, test = train_test_split(data, test_size=0.20)
@@ -34,4 +36,4 @@ X_test, y_test, encoder, lb = process_data(
 )
 # Train and save a model.
 trained_model = train_model(X_train, y_train)
-joblib.dump(train_model, "../model/model.joblib")
+joblib.dump(train_model, os.path.join(dirname, "../model/model.joblib"))
