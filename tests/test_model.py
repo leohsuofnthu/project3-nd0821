@@ -12,8 +12,8 @@ from starter.starter.ml.model import train_model, compute_model_metrics, inferen
 def data():
     """10 sample data for test"""
 
-    dirname = os.path.dirname(__file__)
-    df = pd.read_csv(os.path.join(dirname, "../starter/data/cleaned_census.csv"))[:10]
+    root = os.path.dirname(os.path.abspath(__file__))
+    df = pd.read_csv(os.path.join(root, "starter/data/cleaned_census.csv"))[:10]
     return df
 
 
