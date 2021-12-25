@@ -39,6 +39,10 @@ X_test, y_test, encoder, lb = process_data(
     encoder=encoder,
     lb=lb,
 )
-# Train and save a model.
+# Train and save model and encoder
 trained_model = train_model(X_train, y_train)
 joblib.dump(train_model, os.path.join(dirname, "../model/model.joblib"))
+joblib.dump(encoder, os.path.join(dirname, "../model/encoder.joblib"))
+
+# Data slicing, performance evaluation
+# slice_output.txt
