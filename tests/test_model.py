@@ -11,9 +11,8 @@ from starter.starter.ml.model import train_model, compute_model_metrics, inferen
 @pytest.fixture()
 def data():
     """10 sample data for test"""
-
-    dirname = os.path.dirname(__file__)
-    df = pd.read_csv(os.path.join(dirname, "../starter/data/cleaned_census.csv"))[:10]
+    
+    df = pd.read_csv("/starter/data/cleaned_census.csv"))[:10]
     return df
 
 
