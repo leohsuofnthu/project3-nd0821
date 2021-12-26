@@ -5,6 +5,9 @@ from sklearn.model_selection import train_test_split
 from starter.starter.ml.data import process_data
 from starter.starter.ml.model import train_model
 
+from fastapi.testclient import TestClient
+from starter.main import app
+
 
 @pytest.fixture()
 def data():
@@ -63,3 +66,9 @@ def trainedModel(processedTrain):
     y_train = processedTrain["y_train"]
     trained_model = train_model(X_train, y_train)
     return trained_model
+
+
+@pytest.fixture()
+def client():
+    client = TestClient(app)
+    return client
