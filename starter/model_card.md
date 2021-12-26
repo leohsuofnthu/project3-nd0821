@@ -13,7 +13,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 
 ## Intended Use
 – Primary intended uses: Predict if income is over 50K or under 50K.
-– Primary intended users: Economy or socialogy researcher.
+– Primary intended users: Economy or sociology researcher.
 – Out-of-scope use cases: Try to predict actual income or threshold that is not 50K.
 
 ## Training Data
@@ -44,6 +44,11 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
     - fbeta: 0.654
 
 ## Ethical Considerations
+- There are no sensitive infomation.
+- The data is not used  to inform decisions about matters central to human life or flourishing – e.g., health or safety. 
 
-## Caveats and Recommendations
-
+## Caveats and Recommendations 
+- Accroding to data slicing analysis (can be checked in /screenshots/slice_output.txt), this model might be poor in performance:
+    - native-country: Puerto-Rico, Cuba, China, Vietnam, Yugoslavia, Dominican-Republic, Honduras, Hongkong, Iran
+    - marital-status: Separated
+    - education: 5th-6th
