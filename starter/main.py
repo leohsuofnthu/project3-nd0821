@@ -59,7 +59,7 @@ class inputSample(BaseModel):
 async def welcome():
     """GET method for giving a welcome message."""
     dirname = os.path.dirname(__file__)
-    a = os.listdir(dirname)
+    a = os.listdir(os.path.join(dirname, "model"))
     return {"greeting": "Welcome to my model !", "dirs": (" ").join(a)}
 
 
