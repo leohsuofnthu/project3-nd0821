@@ -70,5 +70,6 @@ def trainedModel(processedTrain):
 
 @pytest.fixture()
 def client():
+    """Client for API testing"""
     client = TestClient(app)
     return client
