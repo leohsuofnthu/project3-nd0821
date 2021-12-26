@@ -7,7 +7,7 @@ import os
 import joblib
 import pandas as pd
 from ml.data import process_data
-from ml.model import train_model
+from ml.model import compute_model_metrics, inference, train_model
 from data_slice import data_slicing_categorical
 
 # Add code to load in the data.
@@ -61,3 +61,8 @@ with open(os.path.join(dirname, "../screenshots/slice_output.txt"), "w") as f:
             f.write(
                 f"\t\t precision:{res[cat][value]['precision']} recall:{res[cat][value]['precision']} fbeta:{res[cat][value]['precision']}\n"
             )
+
+# Show the overall performance for writing model card
+preds = inference(trained_model, X_test)
+precision, recall, fbeta = compute_model_metrics(y_test, preds)
+print(f"Overall Performance: precision:{precision}, recall:{recall}, fbeta:{fbeta}")
