@@ -22,4 +22,4 @@ payload = {
 response = requests.post(api_endpoint + "predict", json=payload)
 
 print(f"Input:{payload}")
-print(f"Prediction:{response}")
+print(f"Prediction:{response.content}")
