@@ -32,22 +32,22 @@ def test_api_locally_model_inference_0(client):
     assert response.json()["prediction"] == "<=50K"
 
 
-def test_api_locally_model_inference_0(client):
+def test_api_locally_model_inference_1(client):
     """Local test for POST method 'model_inference' with output >50K"""
     sample = {
-        "age": 49,
-        "workclass": "Self-emp-inc",
-        "fnlgt": 191681,
-        "education": "Some-college",
-        "education_num": 10,
+        "age": 29,
+        "workclass": "Self-emp-not-inc",
+        "fnlgt": 162298,
+        "education": "Bachelors",
+        "education_num": 13,
         "marital_status": "Married-civ-spouse",
-        "occupation": "Exec-managerial",
+        "occupation": "Sales",
         "relationship": "Husband",
         "race": "White",
         "sex": "Male",
         "capital_gain": 0,
         "capital_loss": 0,
-        "hours_per_week": 50,
+        "hours_per_week": 70,
         "native_country": "United-States",
     }
     response = client.post("/predict", json=sample)
