@@ -17,7 +17,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 ## Training Data
 - Datasets: Census Income Data Set from UCI Machine Learning Repository 
 - Motivation: Build a binary classification model to predict if a person's income is over 50K or not given several features. 
-- Preprocessing: (can be checked in EDA.ipynb) 
+- Preprocessing: (can be checked in EDA.ipynb) \
 &nbsp;&nbsp;- 80% of total samples \
 &nbsp;&nbsp;- Drop NaN \
 &nbsp;&nbsp;- Remove all extra space in string \
@@ -27,7 +27,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 ## Evaluation Data
 - Datasets: Census Income Data Set from UCI Machine Learning Repository 
 - Motivation: Build a binary classification model to predict if a person's income is over 50K or not given several features. 
-- Preprocessing: (can be checked in EDA.ipynb) 
+- Preprocessing: (can be checked in EDA.ipynb) \
 &nbsp;&nbsp;- 20% of total samples \
 &nbsp;&nbsp;- Drop NaN \
 &nbsp;&nbsp;- Remove all extra space in string
