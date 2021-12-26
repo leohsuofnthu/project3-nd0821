@@ -6,11 +6,12 @@ import joblib
 import numpy as np
 import pandas as pd
 
-if "DYNO" in os.environ:
+
+if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
     if os.system("dvc pull") != 0:
         exit("dvc pull failed")
-    # os.system(f"rm -r {os.path.join(dirname,'../dvc')} .apt/usr/lib/dvc")
+    os.system("rm -r .dvc .apt/usr/lib/dvc")
 
 app = FastAPI()
 
@@ -57,9 +58,7 @@ class inputSample(BaseModel):
 @app.get("/")
 async def welcome():
     """GET method for giving a welcome message."""
-    dirname = os.path.dirname(__file__)
-    a = os.listdir(os.path.join(dirname, "model"))
-    return {"greeting": "Welcome to my model !", "dirs": (" ").join(a)}
+    return {"greeting": "Welcome to my model !"}
 
 
 @app.post("/predict")
