@@ -67,8 +67,8 @@ async def model_inference(data: inputSample):
 
     # get encoder, trained model
     dirname = os.path.dirname(__file__)
-    encoder = joblib.load(os.path.join(dirname, "./model/encoder.joblib"))
-    model = joblib.load(os.path.join(dirname, "./model/model.joblib"))
+    encoder = joblib.load(os.path.join(dirname, "model/encoder.joblib"))
+    model = joblib.load(os.path.join(dirname, "model/model.joblib"))
 
     # handle the hyphen stuff here
     sample = {}
