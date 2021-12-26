@@ -1,208 +1,210 @@
 workclass
-	 Private
-		 precision:0.7907742998352554 recall:0.7907742998352554 fbeta:0.7907742998352554
-	 Self-emp-inc
-		 precision:0.8735632183908046 recall:0.8735632183908046 fbeta:0.8735632183908046
-	 Federal-gov
-		 precision:0.813953488372093 recall:0.813953488372093 fbeta:0.813953488372093
-	 Self-emp-not-inc
-		 precision:0.6987951807228916 recall:0.6987951807228916 fbeta:0.6987951807228916
-	 ?
-		 precision:0.64 recall:0.64 fbeta:0.64
-	 State-gov
-		 precision:0.7704918032786885 recall:0.7704918032786885 fbeta:0.7704918032786885
 	 Local-gov
-		 precision:0.7692307692307693 recall:0.7692307692307693 fbeta:0.7692307692307693
-	 Never-worked
-		 precision:1.0 recall:1.0 fbeta:1.0
+		 precision:0.7264150943396226 recall:0.7264150943396226 fbeta:0.7264150943396226
+	 ?
+		 precision:0.7142857142857143 recall:0.7142857142857143 fbeta:0.7142857142857143
+	 Private
+		 precision:0.7817109144542773 recall:0.7817109144542773 fbeta:0.7817109144542773
+	 Self-emp-not-inc
+		 precision:0.7168141592920354 recall:0.7168141592920354 fbeta:0.7168141592920354
+	 State-gov
+		 precision:0.75 recall:0.75 fbeta:0.75
+	 Self-emp-inc
+		 precision:0.8877551020408163 recall:0.8877551020408163 fbeta:0.8877551020408163
+	 Federal-gov
+		 precision:0.825 recall:0.825 fbeta:0.825
 	 Without-pay
 		 precision:1.0 recall:1.0 fbeta:1.0
-education
-	 Some-college
-		 precision:0.9807692307692307 recall:0.9807692307692307 fbeta:0.9807692307692307
-	 Assoc-voc
+	 Never-worked
 		 precision:1.0 recall:1.0 fbeta:1.0
+education
 	 HS-grad
-		 precision:0.9454545454545454 recall:0.9454545454545454 fbeta:0.9454545454545454
+		 precision:0.8686868686868687 recall:0.8686868686868687 fbeta:0.8686868686868687
+	 Doctorate
+		 precision:0.8309859154929577 recall:0.8309859154929577 fbeta:0.8309859154929577
+	 Bachelors
+		 precision:0.7092592592592593 recall:0.7092592592592593 fbeta:0.7092592592592593
+	 Some-college
+		 precision:0.9298245614035088 recall:0.9298245614035088 fbeta:0.9298245614035088
+	 Assoc-acdm
+		 precision:0.7692307692307693 recall:0.7692307692307693 fbeta:0.7692307692307693
+	 11th
+		 precision:0.8571428571428571 recall:0.8571428571428571 fbeta:0.8571428571428571
+	 Assoc-voc
+		 precision:0.8823529411764706 recall:0.8823529411764706 fbeta:0.8823529411764706
+	 Prof-school
+		 precision:0.7961165048543689 recall:0.7961165048543689 fbeta:0.7961165048543689
 	 10th
 		 precision:1.0 recall:1.0 fbeta:1.0
-	 Assoc-acdm
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 11th
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 5th-6th
-		 precision:1.0 recall:1.0 fbeta:1.0
 	 Masters
-		 precision:0.7874396135265701 recall:0.7874396135265701 fbeta:0.7874396135265701
-	 Bachelors
-		 precision:0.7163636363636363 recall:0.7163636363636363 fbeta:0.7163636363636363
-	 Doctorate
-		 precision:0.8771929824561403 recall:0.8771929824561403 fbeta:0.8771929824561403
-	 9th
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 7th-8th
+		 precision:0.8301886792452831 recall:0.8301886792452831 fbeta:0.8301886792452831
+	 1st-4th
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 12th
 		 precision:1.0 recall:1.0 fbeta:1.0
-	 Prof-school
-		 precision:0.8611111111111112 recall:0.8611111111111112 fbeta:0.8611111111111112
-	 1st-4th
+	 7th-8th
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 Preschool
 		 precision:1.0 recall:1.0 fbeta:1.0
+	 5th-6th
+		 precision:0.3333333333333333 recall:0.3333333333333333 fbeta:0.3333333333333333
+	 9th
+		 precision:1.0 recall:1.0 fbeta:1.0
 marital-status
-	 Never-married
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Divorced
-		 precision:1.0 recall:1.0 fbeta:1.0
 	 Married-civ-spouse
-		 precision:0.7717842323651453 recall:0.7717842323651453 fbeta:0.7717842323651453
-	 Widowed
-		 precision:1.0 recall:1.0 fbeta:1.0
+		 precision:0.777998017839445 recall:0.777998017839445 fbeta:0.777998017839445
 	 Separated
-		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+		 precision:0.5 recall:0.5 fbeta:0.5
+	 Never-married
+		 precision:0.8620689655172413 recall:0.8620689655172413 fbeta:0.8620689655172413
+	 Divorced
+		 precision:0.717948717948718 recall:0.717948717948718 fbeta:0.717948717948718
+	 Widowed
+		 precision:0.6153846153846154 recall:0.6153846153846154 fbeta:0.6153846153846154
 	 Married-spouse-absent
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 Married-AF-spouse
 		 precision:1.0 recall:1.0 fbeta:1.0
 occupation
-	 Adm-clerical
-		 precision:0.7384615384615385 recall:0.7384615384615385 fbeta:0.7384615384615385
-	 Prof-specialty
-		 precision:0.8035714285714286 recall:0.8035714285714286 fbeta:0.8035714285714286
-	 Sales
-		 precision:0.7322834645669292 recall:0.7322834645669292 fbeta:0.7322834645669292
-	 Exec-managerial
-		 precision:0.8472222222222222 recall:0.8472222222222222 fbeta:0.8472222222222222
 	 Craft-repair
-		 precision:0.7846153846153846 recall:0.7846153846153846 fbeta:0.7846153846153846
-	 Other-service
-		 precision:0.46153846153846156 recall:0.46153846153846156 fbeta:0.46153846153846156
+		 precision:0.7721518987341772 recall:0.7721518987341772 fbeta:0.7721518987341772
 	 ?
-		 precision:0.64 recall:0.64 fbeta:0.64
-	 Transport-moving
-		 precision:0.7727272727272727 recall:0.7727272727272727 fbeta:0.7727272727272727
-	 Protective-serv
-		 precision:0.6923076923076923 recall:0.6923076923076923 fbeta:0.6923076923076923
+		 precision:0.7142857142857143 recall:0.7142857142857143 fbeta:0.7142857142857143
+	 Sales
+		 precision:0.7984496124031008 recall:0.7984496124031008 fbeta:0.7984496124031008
+	 Adm-clerical
+		 precision:0.7142857142857143 recall:0.7142857142857143 fbeta:0.7142857142857143
+	 Other-service
+		 precision:0.4 recall:0.4 fbeta:0.4
+	 Prof-specialty
+		 precision:0.7686170212765957 recall:0.7686170212765957 fbeta:0.7686170212765957
 	 Handlers-cleaners
-		 precision:0.5 recall:0.5 fbeta:0.5
+		 precision:0.4 recall:0.4 fbeta:0.4
+	 Protective-serv
+		 precision:0.7368421052631579 recall:0.7368421052631579 fbeta:0.7368421052631579
 	 Machine-op-inspct
-		 precision:0.7222222222222222 recall:0.7222222222222222 fbeta:0.7222222222222222
-	 Farming-fishing
-		 precision:0.6363636363636364 recall:0.6363636363636364 fbeta:0.6363636363636364
+		 precision:0.625 recall:0.625 fbeta:0.625
 	 Tech-support
-		 precision:0.7666666666666667 recall:0.7666666666666667 fbeta:0.7666666666666667
+		 precision:0.6875 recall:0.6875 fbeta:0.6875
+	 Transport-moving
+		 precision:0.7586206896551724 recall:0.7586206896551724 fbeta:0.7586206896551724
+	 Exec-managerial
+		 precision:0.859375 recall:0.859375 fbeta:0.859375
+	 Farming-fishing
+		 precision:0.5217391304347826 recall:0.5217391304347826 fbeta:0.5217391304347826
 	 Priv-house-serv
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 Armed-Forces
 		 precision:1.0 recall:1.0 fbeta:1.0
 relationship
-	 Other-relative
-		 precision:0.0 recall:0.0 fbeta:0.0
-	 Not-in-family
-		 precision:0.98 recall:0.98 fbeta:0.98
 	 Husband
-		 precision:0.7759815242494227 recall:0.7759815242494227 fbeta:0.7759815242494227
+		 precision:0.7799779977997799 recall:0.7799779977997799 fbeta:0.7799779977997799
 	 Unmarried
-		 precision:0.9 recall:0.9 fbeta:0.9
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
 	 Own-child
-		 precision:1.0 recall:1.0 fbeta:1.0
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+	 Not-in-family
+		 precision:0.8043478260869565 recall:0.8043478260869565 fbeta:0.8043478260869565
 	 Wife
-		 precision:0.7553191489361702 recall:0.7553191489361702 fbeta:0.7553191489361702
+		 precision:0.8152173913043478 recall:0.8152173913043478 fbeta:0.8152173913043478
+	 Other-relative
+		 precision:0.2 recall:0.2 fbeta:0.2
 race
 	 White
-		 precision:0.7862595419847328 recall:0.7862595419847328 fbeta:0.7862595419847328
+		 precision:0.7830374753451677 recall:0.7830374753451677 fbeta:0.7830374753451677
 	 Black
-		 precision:0.782608695652174 recall:0.782608695652174 fbeta:0.782608695652174
-	 Asian-Pac-Islander
-		 precision:0.7454545454545455 recall:0.7454545454545455 fbeta:0.7454545454545455
+		 precision:0.7407407407407407 recall:0.7407407407407407 fbeta:0.7407407407407407
 	 Other
-		 precision:1.0 recall:1.0 fbeta:1.0
+		 precision:0.5714285714285714 recall:0.5714285714285714 fbeta:0.5714285714285714
 	 Amer-Indian-Eskimo
-		 precision:0.75 recall:0.75 fbeta:0.75
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Asian-Pac-Islander
+		 precision:0.7083333333333334 recall:0.7083333333333334 fbeta:0.7083333333333334
 sex
 	 Male
-		 precision:0.7827050997782705 recall:0.7827050997782705 fbeta:0.7827050997782705
+		 precision:0.778118609406953 recall:0.778118609406953 fbeta:0.778118609406953
 	 Female
-		 precision:0.7933884297520661 recall:0.7933884297520661 fbeta:0.7933884297520661
+		 precision:0.7718120805369127 recall:0.7718120805369127 fbeta:0.7718120805369127
 native-country
 	 United-States
-		 precision:0.789647577092511 recall:0.789647577092511 fbeta:0.789647577092511
-	 Canada
-		 precision:0.6 recall:0.6 fbeta:0.6
+		 precision:0.7848722986247544 recall:0.7848722986247544 fbeta:0.7848722986247544
 	 Mexico
-		 precision:0.75 recall:0.75 fbeta:0.75
-	 Yugoslavia
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 South
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 ?
-		 precision:0.6923076923076923 recall:0.6923076923076923 fbeta:0.6923076923076923
-	 Columbia
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Dominican-Republic
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 El-Salvador
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Germany
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 India
-		 precision:0.5 recall:0.5 fbeta:0.5
-	 Iran
-		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
-	 Greece
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Haiti
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 China
-		 precision:0.75 recall:0.75 fbeta:0.75
-	 England
-		 precision:0.3333333333333333 recall:0.3333333333333333 fbeta:0.3333333333333333
-	 Philippines
-		 precision:0.875 recall:0.875 fbeta:0.875
-	 Puerto-Rico
-		 precision:0.5 recall:0.5 fbeta:0.5
-	 Thailand
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Vietnam
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Japan
-		 precision:0.7 recall:0.7 fbeta:0.7
-	 Cuba
-		 precision:0.0 recall:0.0 fbeta:0.0
-	 Cambodia
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Peru
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Jamaica
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Poland
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Hungary
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 Nicaragua
 		 precision:1.0 recall:1.0 fbeta:1.0
+	 Peru
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 ?
+		 precision:0.7307692307692307 recall:0.7307692307692307 fbeta:0.7307692307692307
+	 Puerto-Rico
+		 precision:0.0 recall:0.0 fbeta:0.0
+	 Cuba
+		 precision:0.5 recall:0.5 fbeta:0.5
+	 China
+		 precision:0.5 recall:0.5 fbeta:0.5
+	 Philippines
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+	 Ecuador
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Japan
+		 precision:0.8571428571428571 recall:0.8571428571428571 fbeta:0.8571428571428571
+	 Canada
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+	 El-Salvador
+		 precision:0.75 recall:0.75 fbeta:0.75
 	 Guatemala
 		 precision:1.0 recall:1.0 fbeta:1.0
-	 Portugal
+	 Cambodia
 		 precision:1.0 recall:1.0 fbeta:1.0
-	 Italy
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 France
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Trinadad&Tobago
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Hong
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Outlying-US(Guam-USVI-etc)
-		 precision:1.0 recall:1.0 fbeta:1.0
-	 Ecuador
-		 precision:0.0 recall:0.0 fbeta:0.0
+	 Germany
+		 precision:0.8333333333333334 recall:0.8333333333333334 fbeta:0.8333333333333334
+	 Vietnam
+		 precision:0.5 recall:0.5 fbeta:0.5
 	 Taiwan
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Columbia
 		 precision:1.0 recall:1.0 fbeta:1.0
 	 Ireland
 		 precision:1.0 recall:1.0 fbeta:1.0
+	 Haiti
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 India
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
 	 Laos
 		 precision:1.0 recall:1.0 fbeta:1.0
+	 Yugoslavia
+		 precision:0.0 recall:0.0 fbeta:0.0
+	 England
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+	 Dominican-Republic
+		 precision:0.0 recall:0.0 fbeta:0.0
+	 Poland
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Portugal
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 South
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Italy
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Hungary
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Trinadad&Tobago
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Greece
+		 precision:1.0 recall:1.0 fbeta:1.0
 	 Scotland
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 France
+		 precision:0.6666666666666666 recall:0.6666666666666666 fbeta:0.6666666666666666
+	 Jamaica
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Honduras
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Hong
+		 precision:0.5 recall:0.5 fbeta:0.5
+	 Iran
+		 precision:0.5 recall:0.5 fbeta:0.5
+	 Outlying-US(Guam-USVI-etc)
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Thailand
 		 precision:1.0 recall:1.0 fbeta:1.0
