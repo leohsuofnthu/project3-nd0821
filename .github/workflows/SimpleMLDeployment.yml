@@ -44,6 +44,7 @@ jobs:
 
       - name: Pull data from remote stroage
         run: |
+          cd starter
           dvc pull
 
       - name: Test with pytest
