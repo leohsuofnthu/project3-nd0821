@@ -6,12 +6,11 @@ import joblib
 import numpy as np
 import pandas as pd
 
-dirname = os.path.dirname(__file__)
-if "DYNO" in os.environ and os.path.isdir(os.path.join(dirname, "../dvc")):
+if "DYNO" in os.environ:
     os.system("dvc config core.no_scm true")
     if os.system("dvc pull") != 0:
         exit("dvc pull failed")
-    os.system(f"rm -r {os.path.join(dirname,'../dvc')} .apt/usr/lib/dvc")
+    # os.system(f"rm -r {os.path.join(dirname,'../dvc')} .apt/usr/lib/dvc")
 
 app = FastAPI()
 
