@@ -58,7 +58,9 @@ class inputSample(BaseModel):
 @app.get("/")
 async def welcome():
     """GET method for giving a welcome message."""
-    return {"greeting": "Welcome to my model !"}
+    dirname = os.path.dirname(__file__)
+    a = os.listdir(dirname)
+    return {"greeting": "Welcome to my model !", "dirs": (" ").join(a)}
 
 
 @app.post("/predict")
