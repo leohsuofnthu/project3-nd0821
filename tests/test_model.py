@@ -1,4 +1,4 @@
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 from starter.starter.ml.model import train_model, compute_model_metrics, inference
 
@@ -34,7 +34,7 @@ def test_train_model(processedTrain):
     trained_model = train_model(X_train, y_train)
 
     # check if the output is the right type of classifier
-    assert isinstance(trained_model, RandomForestClassifier)
+    assert isinstance(trained_model, DecisionTreeClassifier)
 
 
 def test_inference(processedTrain, trainedModel):
