@@ -1,3 +1,4 @@
+import os
 from ml.data import process_data
 from ml.model import inference, compute_model_metrics
 
@@ -7,7 +8,6 @@ def data_slicing_categorical(test, cat_features, trained_model, encoder, lb, col
 
     # get distinct column category value
     unique_val = test[col].unique()
-    metrics = {}
 
     # iterate each value and record the metrics
     for val in unique_val:
@@ -28,6 +28,11 @@ def data_slicing_categorical(test, cat_features, trained_model, encoder, lb, col
         # Do the inference and Compute the metrics
         preds = inference(trained_model, X_test)
         precision, recall, fbeta = compute_model_metrics(y_test, preds)
-        metrics[val] = {"precision": precision, "recall": recall, "fbeta": fbeta}
 
-    return metrics
+        # output the result to slice_output.txt
+        dirname = os.path.dirname(__file__)
+        with open(os.path.join(dirname, "../screenshots/slice_output.txt"), "w") as f:
+            f.write(f"{col}\n")
+            for value in unique_val:
+                f.write(f"\t {value.strip()}\n")
+                f.write(f"\t\t precision:{precision} recall:{recall} fbeta:{fbeta}\n")

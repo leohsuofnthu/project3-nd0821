@@ -45,22 +45,9 @@ trained_model = train_model(X_train, y_train)
 joblib.dump(trained_model, os.path.join(dirname, "../model/model.joblib"))
 joblib.dump(encoder, os.path.join(dirname, "../model/encoder.joblib"))
 
-# Data slicing, performance evaluation
-res = {}
-for cat in cat_features:
-    res[cat] = data_slicing_categorical(
-        test, cat_features, trained_model, encoder, lb, cat
-    )
-
-# Write the result into slice_output.txt
-with open(os.path.join(dirname, "../screenshots/slice_output.txt"), "w") as f:
-    for cat in res.keys():
-        f.write(f"{cat}\n")
-        for value in res[cat].keys():
-            f.write(f"\t {value.strip()}\n")
-            f.write(
-                f"\t\t precision:{res[cat][value]['precision']} recall:{res[cat][value]['precision']} fbeta:{res[cat][value]['precision']}\n"
-            )
+# Data slicing function on certain column (using education as example)
+# using list as input, so as to specify multiple columns with flexibilitus
+data_slicing_categorical(test, cat_features, trained_model, encoder, lb, "education")
 
 # Show the overall performance for writing model card
 preds = inference(trained_model, X_test)
