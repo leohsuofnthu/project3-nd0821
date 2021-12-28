@@ -46,7 +46,6 @@ joblib.dump(trained_model, os.path.join(dirname, "../model/model.joblib"))
 joblib.dump(encoder, os.path.join(dirname, "../model/encoder.joblib"))
 
 # Data slicing function on certain column (using education as example)
-# using list as input, so as to specify multiple columns with flexibilitus
 data_slicing_categorical(test, cat_features, trained_model, encoder, lb, "education")
 
 # Show the overall performance for writing model card
